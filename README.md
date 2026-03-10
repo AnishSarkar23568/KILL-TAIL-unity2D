@@ -98,7 +98,7 @@ While building this project I learned:
 ---
 
 # 👨‍💻 Developer
-Anish
-Created by **[Your Name]**
+
+Created by Anish
 
 Indie Game Developer | Unity Learner
