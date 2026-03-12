@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraFollow2DD : MonoBehaviour
+public class CameraFollow2D : MonoBehaviour
 {
     public Transform target;
     public float smoothSpeed = 0.125f;
@@ -12,7 +12,7 @@ public class CameraFollow2DD : MonoBehaviour
     {
         if (target == null)
         {
-            Debug.LogError("CameraFollow2DD: No target assigned.");
+            Debug.LogError("CameraFollow2D: No target assigned.");
             return;
         }
 
