@@ -26,7 +26,7 @@ The snake grows when eating humen and the game ends when it collides with:
 - Camera shake effects
 - Sound effects and background music
 - Blood particle effects when eating food
-
+-CameraFollow2D
 ---
 
 # 🧠 Core Systems Implemented
@@ -85,7 +85,7 @@ While building this project I learned:
 - Working with prefabs and instantiation
 - Collision detection in 2D physics
 - Basic game state management
-
+-CameraFollow2D
 ---
 
 # 🚀 Future Improvements
