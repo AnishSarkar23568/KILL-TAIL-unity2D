@@ -27,7 +27,7 @@ public class MainMenuManager : MonoBehaviour
 
     void Start()
     {
-        // ✅ Set up buttons first
+        //  Set up buttons first
         if (creditButton != null)
             creditButton.onClick.AddListener(OnCreditButtonClicked);
         if (closeCreditButton != null)
@@ -35,18 +35,18 @@ public class MainMenuManager : MonoBehaviour
 
         creditPanel.SetActive(false); // Hide credit panel at start
 
-        // ✅ Check if restarting (skip tap to start)
+        //  Check if restarting (skip tap to start)
         if (PlayerPrefs.GetInt("IsRestarting", 0) == 1)
         {
             Time.timeScale = 1f;
             PlayerPrefs.SetInt("IsRestarting", 0);
-            TapToStaetloadingPanel.SetActive(false); // ✅ Skip tap-to-start
+            TapToStaetloadingPanel.SetActive(false); //  Skip tap-to-start
             mainMenuPanel.SetActive(true);
             attackButton.SetActive(true);
             return;
         }
 
-        // ✅ First time load (show tap-to-start)
+        //  First time load (show tap-to-start)
         Time.timeScale = 0f;
         TapToStaetloadingPanel.SetActive(true);
         TTSloadingBar.value = 0f;
@@ -71,7 +71,7 @@ public class MainMenuManager : MonoBehaviour
             yield return null;
         }
 
-        // ✅ Skip tap-to-start, go directly to menu
+        //  Skip tap-to-start, go directly to menu
         TapToStaetloadingPanel.SetActive(false);
         mainMenuPanel.SetActive(true);
         attackButton.SetActive(true);
