@@ -31,7 +31,7 @@ public class CameraFollow2D : MonoBehaviour
 
     public void SetShakeOffset(Vector3 shake)
     {
-        shakeOffset = shake; // ← Apply actual shake!
+        shakeOffset = shake; 
     }
 
 }
