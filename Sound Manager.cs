@@ -89,7 +89,7 @@ public class SoundManager : MonoBehaviour
         if (clip != null && sfxSource != null)
             sfxSource.PlayOneShot(clip);
     }
-    // ✅ New method to allow volume control
+    // New method to allow volume control
     public void PlaySFX(AudioClip clip, float volume)
     {
         sfxSource.PlayOneShot(clip, volume);
